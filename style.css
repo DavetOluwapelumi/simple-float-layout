@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  color:#444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+h1::first-letter{
+  font-style: normal;
+  margin-right: 5px;
+}
+h3 + p::first-line{
+  /* color: red; */
+}
+h2::after{
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  position: absolute;
+  left: 800px;
+  top: -10px;
+  color: #000;
+}
+button{
+  font-size: 22px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+.post-img{
+  width: 100%;
+  height: auto;
+}
+nav a:link{
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.post-header{
+  margin-bottom: 40px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul, ol{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child{
+  margin-bottom: 0;
+}
+/* footer p{
+  font-size: 16px;
+} */
+.related-list {
+  list-style: none;
+}
+#copyright {
+  font-size: 16px;
+}
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  margin-top: 60px;
+  width: 500px;
+}
+/* .first-li{
+  font-weight: bold;
+} */
+li:first-child {
+  font-weight: bold;
+}
+
+a:any-link{
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited{
+  color: #1098ad;
+}
+a:hover{
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+a:active{
+  background-color: black;
+  font-style: italic;
+}
+/* LVHA */
+/* FLOATS */
+.author-img{
+  float: left;
+}
+#author{
+  /* padding-left: 80px; */
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+h1{
+  float: left;
+}
+nav{
+  float: right;
+}
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+article{
+  /* background-color:red; */
+  width: 825px;
+  float: left;
+  /* position: relative; */
+}
+aside{
+  /* background-color: green; */
+  width: 300px;
+  float: right;
+  margin-top: 0;
+}
+footer{
+  clear: both;
+}
